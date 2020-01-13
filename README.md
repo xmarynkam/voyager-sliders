@@ -12,8 +12,8 @@
 
 ```bash
 # 1. Require this module in your fresh Laravel/Voyager project
--- Stable: composer require pvtl/voyager-sliders
--- Development: composer require pvtl/voyager-sliders@dev
+-- Stable: composer require xmarynkam/voyager-sliders
+-- Development: composer require xmarynkam/voyager-sliders@dev
 
 # 2. Run the Installer
 php artisan voyager-sliders:install
