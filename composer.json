@@ -1,0 +1,49 @@
+{
+    "name": "pvtl/voyager-sliders",
+    "description": "Slider module for voyager",
+    "keywords": [
+        "laravel",
+        "frontend",
+        "voyager",
+        "sliders"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Yakymiv Alyona",
+            "email": "xmarynkam@gmail.com"
+        }
+    ],
+    "require": {
+        "tcg/voyager": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Pvtl\\VoyagerSliders\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [],
+        "psr-4": {
+            "Pvtl\\VoyagerSliders\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pvtl\\VoyagerSliders\\Providers\\SlidersServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "post-package-install": [
+            "@php artisan voyager-sliders:install"
+        ]
+    }
+}
